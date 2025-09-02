@@ -395,7 +395,7 @@ class TradingAgentsGraph:
             f"eval_results/{self.ticker}/TradingAgentsStrategy_logs/full_states_log.json",
             "w",
         ) as f:
-            json.dump(self.log_states_dict, f, indent=4)
+            json.dump(self.log_states_dict, f, ensure_ascii=False, indent=4)
 
     def reflect_and_remember(self, returns_losses):
         """Reflect on decisions and update memory based on returns."""

@@ -85,11 +85,10 @@ def main():
         print()
         
         # 分析股票
-        stock_symbol = "AAPL"  # 苹果公司
-        analysis_date = "2024-05-10"
+        stock_symbol = "2097.HK" # A：000001； HK： 09988.HK； US：AAPL
+        analysis_date = "2025-09-02"
 
         # 设置中文输出提示
-        import os
         os.environ['TRADINGAGENTS_LANGUAGE'] = 'zh-CN'
         
         logger.info(f"📈 开始分析股票: {stock_symbol}")
